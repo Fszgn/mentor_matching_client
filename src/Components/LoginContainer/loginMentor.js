@@ -64,8 +64,7 @@ const LoginMentor = ({ trigger, settrigger }) => {
   useEffect(() => {
     /* global google */
     google.accounts.id.initialize({
-      client_id:
-        "788173478119-hbk0gb6srd9o6ej65cg9e4i5v2fpddud.apps.googleusercontent.com",
+      client_id: process.env.REACT_APP_GOOGLE_ID,
       callback: handleCallbackResponse,
     });
 

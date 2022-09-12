@@ -63,12 +63,6 @@ const LoginStudent = ({ trigger, settrigger }) => {
       <Container>
         <Title>Login via Google</Title>
         <div id="signInDiv"></div>
-        <form>
-          <button onClick={(e) => {
-            e.preventDefault()
-            console.log("hello", process.env.REACT_APP_GOOGLE_ID);
-          }}>hello</button>
-        </form>
       </Container>
     </Wrapper>
   );
