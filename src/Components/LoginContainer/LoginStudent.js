@@ -43,7 +43,7 @@ const LoginStudent = ({ trigger, settrigger }) => {
   useEffect(() => {
     if (student !== null) {
       // console.log(student.email);
-      fetch(`/studentLogIn`, {
+      fetch(`https://mentormatchingapp-finalpro.herokuapp.com/studentLogIn`, {
         method: "POST",
         body: JSON.stringify({
           student,

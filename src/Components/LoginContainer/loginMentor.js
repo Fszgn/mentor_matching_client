@@ -45,7 +45,7 @@ const LoginMentor = ({ trigger, settrigger }) => {
   const logInMentor = () => {
     settrigger(!trigger);
 
-    fetch(`/mentorLogIn`, {
+    fetch(`https://mentormatchingapp-finalpro.herokuapp.com/mentorLogIn`, {
       method: "POST",
       body: JSON.stringify({
         mentor,
